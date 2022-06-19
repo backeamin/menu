@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    height: 48px;
+    width: 70%;
+    background-color: black;
+    margin: 50px auto 0;
+}
+.menu ul li{
+    list-style-type: none;
+    float: left;
+    position: relative;
+}
+.menu ul li a{
+    padding: 15px 30px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    transition: .5s;
+}
+.menu ul li:hover > a{
+    background-color: wheat;
+    color: black;
+}
+.menu ul li ul{
+    position: absolute;
+    background-color: red;
+    visibility: hidden;
+}
+.menu ul li:hover > ul{
+    visibility: visible;
+    opacity: 5;
+}
+.menu ul li ul li{
+    width: 100%;
+}
+.menu ul li ul li ul{
+    left: 100%;
+    top: 0;
+}
